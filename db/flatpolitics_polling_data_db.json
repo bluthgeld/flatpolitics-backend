@@ -1,0 +1,119 @@
+
+    {
+        "Poll":{ 
+            "id": 1,
+            "pollTitle": "The Economist/YouGov Poll",
+            "pollingDates": "July 21-23",
+            "year": "2019",
+            "totalPolled": "1500 U.S. Adult Citizens",
+            "Questions": [{
+                "Favorability": {   
+                    "Candidates": [{
+                            "Joe Biden": [{
+                                "candidateId": 1,
+                                "Overall": {
+                                    "Favorable": 39,
+                                    "Unfavorable": 43,
+                                    "Don't Know": 17
+                                }
+                            }],
+                            "Cory Booker": [{
+                                "candidateId": 2,
+                                "Overall": {
+                                    "Favorable": 31,
+                                    "Unfavorable": 33,
+                                    "Don't Know": 35
+                                }
+                            }], 
+                            "Pete Buttigieg": [{
+                                "candidateId": 3,
+                                "Overall": {
+                                    "Favorable": 29,
+                                    "Unfavorable": 29,
+                                    "Don't Know": 42
+                                }
+                            }],
+                            "Julian Castro": [{
+                                "candidateId": 4,
+                                "Overall": {
+                                    "Favorable": 28,
+                                    "Unfavorable": 27,
+                                    "Don't Know": 45
+                                }
+                            }],
+                            "Kirsten Gillibrand": [{
+                                "candidateId": 5,
+                                "Overall": {
+                                    "Favorable": 24,
+                                    "Unfavorable": 34,
+                                    "Don't Know": 43
+                                }
+                            }],
+                            "Kamala Harris": [{
+                                "candidateId": 6,
+                                "Overall": {
+                                    "Favorable": 33,
+                                    "Unfavorable": 36,
+                                    "Don't Know": 31
+                                }
+                            }],
+                            "Beto O'Rourke": [{
+                                "candidateId": 7,
+                                "Overall": {
+                                    "Favorable": 29,
+                                    "Unfavorable": 36,
+                                    "Don't Know": 36
+                                }
+                            }],
+                            "Elizabeth Warren": [{
+                                "candidateId": 8,
+                                "Overall": {
+                                    "Favorable": 37,
+                                    "Unfavorable": 37,
+                                    "Don't Know": 26
+                                }
+                            }]
+                        }]
+                }
+            },
+            {
+                "Direction of Country": {
+                    "Demographics": [{
+                        "Total":{
+                            "Generally headed in the right direction": 35,
+                            "Off on the wrong track": 53,
+                            "Not sure": 12
+                        },
+                        "Male":{
+                            "Generally headed in the right direction": 40,
+                            "Off on the wrong track": 50,
+                            "Not sure": 10 
+                        },
+                        "Female":{
+                            "Generally headed in the right direction": 30,
+                            "Off on the wrong track": 56,
+                            "Not sure": 14 
+                        },
+                        "White":{
+                            "Generally headed in the right direction": 39,
+                            "Off on the wrong track": 51,
+                            "Not sure": 10 
+                        },
+                        "Black":{
+                            "Generally headed in the right direction": 13,
+                            "Off on the wrong track": 72,
+                            "Not sure": 16
+                        },
+                        "Hispanic":{
+                            "Generally headed in the right direction": 30,
+                            "Off on the wrong track": 54,
+                            "Not sure": 16
+                   
+                        }
+                
+                    }]
+                }
+            }]
+        }
+}
+    
