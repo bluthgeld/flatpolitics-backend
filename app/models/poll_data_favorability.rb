@@ -1,0 +1,2 @@
+class PollDataFavorability < ApplicationRecord
+end

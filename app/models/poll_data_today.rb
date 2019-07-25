@@ -1,0 +1,2 @@
+class PollDataToday < ApplicationRecord
+end
