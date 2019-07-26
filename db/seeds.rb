@@ -15,10 +15,14 @@
 
 Candidate.destroy_all
 PollDataFavorability.destroy_all
-
+Poll.destroy_all
+User.destroy_all
+PollDataToday.destroy_all
 #Polls
 
 poll1 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 21", end_date: "July 23", year: 2019, race: "U.S. President")
+poll2 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 24", end_date: "July 26", year: 2019, race: "U.S. President")
+poll3 = Poll.create!(question: "Likely Vote Today", pollster: "Emerson", start_date: "July 6", end_date: "July 8", year: 2019, race: "U.S. President")
 
 
 
@@ -42,6 +46,26 @@ poll_data_favorability_5 = PollDataFavorability.create!(poll_id: poll1.id, candi
 poll_data_favorability_6 = PollDataFavorability.create!(poll_id: poll1.id, candidate_id: candidate_6.id, favorable: 33, unfavorable: 36, dont_know: 31)
 poll_data_favorability_7 = PollDataFavorability.create!(poll_id: poll1.id, candidate_id: candidate_7.id, favorable: 29, unfavorable: 36, dont_know: 36)
 poll_data_favorability_8 = PollDataFavorability.create!(poll_id: poll1.id, candidate_id: candidate_8.id, favorable: 37, unfavorable: 37, dont_know: 26)
+poll_data_favorability_1 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_1.id, favorable: 39, unfavorable: 43, dont_know: 17)
+poll_data_favorability_2 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_2.id, favorable: 31, unfavorable: 33, dont_know: 35)
+poll_data_favorability_3 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_3.id, favorable: 29, unfavorable: 29, dont_know: 42)
+poll_data_favorability_4 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_4.id, favorable: 28, unfavorable: 27, dont_know: 45)
+poll_data_favorability_5 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_5.id, favorable: 24, unfavorable: 34, dont_know: 43)
+poll_data_favorability_6 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_6.id, favorable: 33, unfavorable: 36, dont_know: 31)
+poll_data_favorability_7 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_7.id, favorable: 29, unfavorable: 36, dont_know: 36)
+poll_data_favorability_8 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_8.id, favorable: 37, unfavorable: 37, dont_know: 26)
+
+
+poll_data_todays1 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_1.id, percent: 30)
+poll_data_todays2 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_2.id, percent: 15)
+poll_data_todays3 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_3.id, percent: 15)
+poll_data_todays4 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_4.id, percent: 15)
+poll_data_todays5 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_5.id, percent: 5)
+poll_data_todays6 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_6.id, percent: 4)
+poll_data_todays7 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_7.id, percent: 3)
+poll_data_todays8 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_8.id, percent: 2)
+
+
 
 #User
 
@@ -51,4 +75,6 @@ user1 = User.create!(first_name: "Dan", last_name: "Pollitics", username: "dpoll
 #UserPoll
 
 userpoll1 = UserPoll.create!(user_id: user1.id, poll_id: poll1.id)
+userpoll2 = UserPoll.create!(user_id: user1.id, poll_id: poll2.id)
 userpoll2 = UserPoll.create!(user_id: adminuser.id, poll_id: poll1.id)
+userpoll3 = UserPoll.create!(user_id: user1.id, poll_id: poll3.id)
