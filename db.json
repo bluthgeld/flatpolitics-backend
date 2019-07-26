@@ -10,42 +10,42 @@
               "Candidates": [{
                       "Joe Biden": [{
                           "candidateId": 1,
-                          "overall": {
-                              "favorable": 39,
-                              "unfavorable": 43,
-                              "Don't Know": 17
+                            "overall": {
+                                "favorable": 39,
+                                "unfavorable": 43,
+                                "don't know": 17
                           }
                       }],
                       "Cory Booker": [{
                           "candidateId": 2,
-                          "overall": {
-                              "favorable": 31,
-                              "unfavorable": 33,
-                              "Don't Know": 35
+                            "overall": {
+                                "favorable": 31,
+                                "unfavorable": 33,
+                                "don't know": 35
                           }
                       }], 
                       "Pete Buttigieg": [{
                           "candidateId": 3,
-                          "overall": {
-                              "favorable": 29,
-                              "unfavorable": 29,
-                              "Don't Know": 42
+                            "overall": {
+                               "favorable": 29,
+                                "unfavorable": 29,
+                                "don't know": 42
                           }
                       }],
                       "Julian Castro": [{
                           "candidateId": 4,
-                          "overall": {
-                              "favorable": 28,
-                              "unfavorable": 27,
-                              "Don't Know": 45
+                            "overall": {
+                                "favorable": 28,
+                                "unfavorable": 27,
+                                "don't know": 45
                           }
                       }],
                       "Kirsten Gillibrand": [{
                           "candidateId": 5,
-                          "overall": {
-                              "favorable": 24,
-                              "unfavorable": 34,
-                              "Don't Know": 43
+                            "overall": {
+                               "favorable": 24,
+                                "unfavorable": 34,
+                                "don't Know": 43
                           }
                       }],
                       "Kamala Harris": [{
@@ -53,7 +53,7 @@
                           "overall": {
                               "favorable": 33,
                               "unfavorable": 36,
-                              "Don't Know": 31
+                              "don't Know": 31
                           }
                       }],
                       "Beto O'Rourke": [{
@@ -61,15 +61,15 @@
                           "overall": {
                               "favorable": 29,
                               "unfavorable": 36,
-                              "Don't Know": 36
+                              "don't know": 36
                           }
                       }],
                       "Elizabeth Warren": [{
                           "candidateId": 8,
-                          "overall": {
-                              "favorable": 3,
-                              "unfavorable": 37,
-                              "Don't Know": 26
+                            "overall": {
+                                "favorable": 3,
+                                "unfavorable": 37,
+                                "don't know": 26
                           }
                       }]
                   }]
