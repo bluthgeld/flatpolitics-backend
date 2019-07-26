@@ -1,6 +1,6 @@
-class CreatePollQuestions < ActiveRecord::Migration[5.2]
+class CreatePolls < ActiveRecord::Migration[5.2]
   def change
-    create_table :poll_questions do |t|
+    create_table :polls do |t|
       t.string :question
       t.string :pollster
       t.string :end_date

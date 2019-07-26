@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_25_212900) do
+ActiveRecord::Schema.define(version: 2019_07_26_152546) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,13 +51,20 @@ ActiveRecord::Schema.define(version: 2019_07_25_212900) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "poll_questions", force: :cascade do |t|
+  create_table "polls", force: :cascade do |t|
     t.string "question"
     t.string "pollster"
     t.string "end_date"
     t.string "start_date"
     t.integer "year"
     t.string "race"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_polls", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "poll_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

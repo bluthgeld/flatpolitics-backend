@@ -17,14 +17,14 @@ Candidate.destroy_all
 PollDataFavorability.destroy_all
 
 #Candidates Seed
-candidate_1 = Candidate.create!(name: "Joe Biden", state: "Delaware", party: "Democrat")
-candidate_2 = Candidate.create!(name: "Cory Booker", state: "New Jersey", party: "Democrat")
-candidate_3 = Candidate.create!(name: "Pete Buttigieg", state: "Indiana", party: "Democrat")
-candidate_4 = Candidate.create!(name: "Julian Castro", state: "Texas", party: "Democrat")
-candidate_5 = Candidate.create!(name: "Kirsten Gillibrand", state: "New York", party: "Democrat")
-candidate_6 = Candidate.create!(name: "Kamala Harris", state: "California", party: "Democrat")
-candidate_7 = Candidate.create!(name: "Beto O'Rourke", state: "Texas", party: "Democrat")
-candidate_8 = Candidate.create!(name: "Elizabeth Warren", state: "Massachussetts", party: "Democrat")
+candidate_1 = Candidate.create!(name: "Joe Biden", state: "Delaware", party: "Democratic")
+candidate_2 = Candidate.create!(name: "Cory Booker", state: "New Jersey", party: "Democratic")
+candidate_3 = Candidate.create!(name: "Pete Buttigieg", state: "Indiana", party: "Democratic")
+candidate_4 = Candidate.create!(name: "Julian Castro", state: "Texas", party: "Democratic")
+candidate_5 = Candidate.create!(name: "Kirsten Gillibrand", state: "New York", party: "Democratic")
+candidate_6 = Candidate.create!(name: "Kamala Harris", state: "California", party: "Democratic")
+candidate_7 = Candidate.create!(name: "Beto O'Rourke", state: "Texas", party: "Democratic")
+candidate_8 = Candidate.create!(name: "Elizabeth Warren", state: "Massachussetts", party: "Democratic")
 
 #Poll-Data-Favorability Seed
 
