@@ -1,3 +1,6 @@
+require 'rest-client'
+require 'JSON'
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -13,6 +16,18 @@
 #     t.integer "unfavorable"
 #     t.integer "dont_know"
 
+#NewsAPI Variables
+news_key_full = "https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=81d881f856994d159d5969432e56616d"
+news_key = "81d881f856994d159d5969432e56616d"
+news_api = `https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=#{news_key}`
+news_api_response  = RestClient.get(news_api)
+news_api_parsed = JSON.parse(news_api_response)
+
+news_article = news_api_parsed.map do |article|
+    puts article
+   require pry 
+end
+    
 Candidate.destroy_all
 PollDataFavorability.destroy_all
 Poll.destroy_all
@@ -23,7 +38,6 @@ PollDataToday.destroy_all
 poll1 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 21", end_date: "July 23", year: 2019, race: "U.S. President")
 poll2 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 24", end_date: "July 26", year: 2019, race: "U.S. President")
 poll3 = Poll.create!(question: "Likely Vote Today", pollster: "Emerson", start_date: "July 6", end_date: "July 8", year: 2019, race: "U.S. President")
-
 
 
 #Candidates Seed
