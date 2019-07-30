@@ -43,10 +43,9 @@ User.destroy_all
 PollDataToday.destroy_all
 #Polls
 
-poll1 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 21", end_date: "July 23", year: 2019, race: "U.S. President")
-poll2 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 24", end_date: "July 26", year: 2019, race: "U.S. President")
-poll3 = Poll.create!(question: "Likely Vote Today", pollster: "Emerson", start_date: "July 6", end_date: "July 8", year: 2019, race: "U.S. President")
-
+poll1 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 21", end_date: "July 23", year: 2019, race: "2020 Democratic Presidential Primary")
+poll2 = Poll.create!(question: "Favorability", pollster: "EconomistYouGov", start_date: "July 24", end_date: "July 26", year: 2019, race: "2020 Democratic Presidential Primary")
+# poll3 = Poll.create!(question: "Likely Vote Today", pollster: "Emerson", start_date: "July 6", end_date: "July 8", year: 2019, race: "U.S. President")
 
 #Candidates Seed
 candidate_1 = Candidate.create!(name: "Joe Biden", state: "Delaware", party: "Democratic")
@@ -78,14 +77,14 @@ poll_data_favorability_7 = PollDataFavorability.create!(poll_id: poll2.id, candi
 poll_data_favorability_8 = PollDataFavorability.create!(poll_id: poll2.id, candidate_id: candidate_8.id, favorable: 37, unfavorable: 37, dont_know: 26)
 
 
-poll_data_todays1 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_1.id, percent: 30)
-poll_data_todays2 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_2.id, percent: 15)
-poll_data_todays3 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_3.id, percent: 15)
-poll_data_todays4 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_4.id, percent: 15)
-poll_data_todays5 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_5.id, percent: 5)
-poll_data_todays6 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_6.id, percent: 4)
-poll_data_todays7 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_7.id, percent: 3)
-poll_data_todays8 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_8.id, percent: 2)
+# poll_data_todays1 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_1.id, percent: 30)
+# poll_data_todays2 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_2.id, percent: 15)
+# poll_data_todays3 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_3.id, percent: 15)
+# poll_data_todays4 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_4.id, percent: 15)
+# poll_data_todays5 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_5.id, percent: 5)
+# poll_data_todays6 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_6.id, percent: 4)
+# poll_data_todays7 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_7.id, percent: 3)
+# poll_data_todays8 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_8.id, percent: 2)
 
 
 #User
@@ -97,8 +96,7 @@ user1 = User.create!(first_name: "Dan", last_name: "Pollitics", username: "dpoll
 
 userpoll1 = UserPoll.create!(user_id: user1.id, poll_id: poll1.id)
 userpoll2 = UserPoll.create!(user_id: user1.id, poll_id: poll2.id)
-userpoll2 = UserPoll.create!(user_id: adminuser.id, poll_id: poll1.id)
-userpoll3 = UserPoll.create!(user_id: user1.id, poll_id: poll3.id)
+userpoll3 = UserPoll.create!(user_id: adminuser.id, poll_id: poll1.id)
 
 #Calling function to populate news articles
 news_article(news_api_parsed)
