@@ -10,6 +10,7 @@
               "Candidates": [{
                       "Joe Biden": [{
                           "candidateId": 1,
+                          "candidateName": "Joe Biden",
                             "overall": {
                                 "favorable": 39,
                                 "unfavorable": 43,
@@ -18,6 +19,7 @@
                       }],
                       "Cory Booker": [{
                           "candidateId": 2,
+                          "candidateName": "Cory Booker",
                             "overall": {
                                 "favorable": 31,
                                 "unfavorable": 33,
@@ -26,6 +28,7 @@
                       }], 
                       "Pete Buttigieg": [{
                           "candidateId": 3,
+                          "candidateName": "Pete Buttigieg",
                             "overall": {
                                "favorable": 29,
                                 "unfavorable": 29,
@@ -34,6 +37,7 @@
                       }],
                       "Julian Castro": [{
                           "candidateId": 4,
+                          "candidateName": "Julian Castro",
                             "overall": {
                                 "favorable": 28,
                                 "unfavorable": 27,
@@ -42,6 +46,7 @@
                       }],
                       "Kirsten Gillibrand": [{
                           "candidateId": 5,
+                          "candidateName": "Kirsten Gillibrand",
                             "overall": {
                                "favorable": 24,
                                 "unfavorable": 34,
@@ -50,6 +55,7 @@
                       }],
                       "Kamala Harris": [{
                           "candidateId": 6,
+                          "candidateName": "Kamala Harris",
                           "overall": {
                               "favorable": 33,
                               "unfavorable": 36,
@@ -58,6 +64,7 @@
                       }],
                       "Beto O'Rourke": [{
                           "candidateId": 7,
+                          "candidateName": "Beto O'Rourke",
                           "overall": {
                               "favorable": 29,
                               "unfavorable": 36,
@@ -66,6 +73,7 @@
                       }],
                       "Elizabeth Warren": [{
                           "candidateId": 8,
+                          "candidateName": "Elizabeth Warren",
                             "overall": {
                                 "favorable": 3,
                                 "unfavorable": 37,

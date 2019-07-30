@@ -88,7 +88,6 @@ poll_data_todays7 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candi
 poll_data_todays8 = PollDataToday.create!(poll_id: poll3.id, candidate_id: candidate_8.id, percent: 2)
 
 
-
 #User
 
 adminuser = User.create!(first_name: "Robert", last_name: "Pancake", username: "admin", postal_code: "20902")
