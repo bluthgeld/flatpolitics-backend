@@ -28,7 +28,7 @@ class PollsController < ApplicationController
       :except => [:id, :created_at, :updated_at ],
       :include => {
         :poll_data_favorabilities => {
-          :except => [:id,  :poll_id, :candidate_id, :created_at, :updated_at],
+          :except => [:id, :poll_id, :candidate_id, :created_at, :updated_at],
           :include => {
             :candidate => {
               :except => [:id, :created_at, :updated_at]
