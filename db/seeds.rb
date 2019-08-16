@@ -89,7 +89,7 @@ poll_data_favorability_8 = PollDataFavorability.create!(poll_id: poll2.id, candi
 
 #User
 
-adminuser = User.create!(first_name: "Robert", last_name: "Pancake", username: "admin", postal_code: "20902")
+adminuser = User.create!(first_name: "Robert", last_name: "Pancake", username: "admin", postal_code: "10576")
 user1 = User.create!(first_name: "Dan", last_name: "Pollitics", username: "dpollitics", postal_code: "10011")
 
 #UserPoll
